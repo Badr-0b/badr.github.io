@@ -39,11 +39,11 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /* Ensure content is tall enough to allow scrolling */
     min-height: 150vh;
-    padding: 6rem 2rem 2rem;
+    padding: 20vh 2rem 2rem;
     text-align: center;
     z-index: 10;
 }
@@ -56,6 +56,8 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -1px;
     max-width: 800px;
+    text-align: center;
+    width: 100%;
 }
 
 h1 span {

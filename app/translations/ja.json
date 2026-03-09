@@ -1,0 +1,15 @@
+{
+    "nav.home": "ホーム",
+    "nav.about": "概要",
+    "nav.contact": "お問い合わせ",
+    "nav.badge": "[開発中]",
+    "hero.title": "システム開発中。",
+    "hero.subtitle": "近日公開予定。",
+    "hero.description": "現在、基盤を構築中です。下にスクロールしてナビバーをテストしてください。",
+    "hero.license": "注意：ライセンスを遵守してください。",
+    "lang.en": "English",
+    "lang.fr": "Français",
+    "lang.ar": "العربية",
+    "lang.zh": "中文",
+    "lang.ja": "日本語"
+}

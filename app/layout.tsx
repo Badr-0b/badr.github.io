@@ -1,14 +1,11 @@
-import type { Metadata } from 'next';
+'use client';
+
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
+import { LanguageProvider } from './components/LanguageContext';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700', '900'] });
-
-export const metadata: Metadata = {
-    title: 'Under Construction',
-    description: 'Site is undergoing construction currently.',
-};
 
 export default function RootLayout({
     children,
@@ -17,9 +14,15 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <title>Under Construction</title>
+                <meta name="description" content="Site is undergoing construction currently." />
+            </head>
             <body className={inter.className}>
-                <Navbar />
-                {children}
+                <LanguageProvider>
+                    <Navbar />
+                    {children}
+                </LanguageProvider>
             </body>
         </html>
     );

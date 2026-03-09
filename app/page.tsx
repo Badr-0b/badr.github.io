@@ -1,21 +1,26 @@
+'use client';
+
 import React from 'react';
+import { useLanguage } from './components/LanguageContext';
 
 export default function Home() {
+    const { t } = useLanguage();
+
     return (
         <main className="content">
             <div className="background-container"></div>
             <div className="overlay"></div>
 
-            <h1>SYSTEM IN DEV. <br /><span>EXPECT SOMETHING SOON.</span></h1>
+            <h1>{t('hero.title')} <br /><span>{t('hero.subtitle')}</span></h1>
 
             <div className="progress-bar">
                 <div className="progress-fill"></div>
             </div>
 
-            <p>I&apos;m building the foundations right now. Scroll down to test the navbar.</p>
+            <p>{t('hero.description')}</p>
 
             <div className="note-card">
-                <p className="license-note">Note: Please stick to the license.</p>
+                <p className="license-note">{t('hero.license')}</p>
             </div>
         </main>
     );

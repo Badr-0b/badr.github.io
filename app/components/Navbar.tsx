@@ -2,21 +2,22 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useLanguage } from './LanguageContext';
+import LanguageSelector from './LanguageSelector';
 import './Navbar.css';
 
 export default function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
             if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                // Scrolling down
                 setIsVisible(false);
             } else {
-                // Scrolling up
                 setIsVisible(true);
             }
 
@@ -32,14 +33,15 @@ export default function Navbar() {
             <div className="navbar-container">
                 <div className="navbar-logo">
                     <Link href="/">
-                        PORTFOLIO <span className="dev-badge">[IN DEV]</span>
+                        Badr Obtel <span className="dev-badge">{t('nav.badge')}</span>
                     </Link>
                 </div>
                 <ul className="navbar-links">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="#about">About</Link></li>
-                    <li><Link href="#contact">Contact</Link></li>
+                    <li><Link href="/">{t('nav.home')}</Link></li>
+                    <li><Link href="#about">{t('nav.about')}</Link></li>
+                    <li><Link href="#contact">{t('nav.contact')}</Link></li>
                 </ul>
+                <LanguageSelector />
             </div>
         </nav>
     );

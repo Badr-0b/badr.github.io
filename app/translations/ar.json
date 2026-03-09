@@ -1,0 +1,15 @@
+{
+    "nav.home": "الرئيسية",
+    "nav.about": "حول",
+    "nav.contact": "اتصل",
+    "nav.badge": "[قيد التطوير]",
+    "hero.title": "النظام قيد التطوير.",
+    "hero.subtitle": "توقعوا شيئاً قريباً.",
+    "hero.description": "أقوم ببناء الأسس الآن. قم بالتمرير لأسفل لاختبار شريط التنقل.",
+    "hero.license": "ملاحظة: يرجى الالتزام بالرخصة.",
+    "lang.en": "English",
+    "lang.fr": "Français",
+    "lang.ar": "العربية",
+    "lang.zh": "中文",
+    "lang.ja": "日本語"
+}

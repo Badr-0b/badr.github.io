@@ -1,0 +1,15 @@
+{
+    "nav.home": "首页",
+    "nav.about": "关于",
+    "nav.contact": "联系",
+    "nav.badge": "[开发中]",
+    "hero.title": "系统开发中。",
+    "hero.subtitle": "敬请期待。",
+    "hero.description": "我正在构建基础。向下滚动以测试导航栏。",
+    "hero.license": "注意：请遵守许可证。",
+    "lang.en": "English",
+    "lang.fr": "Français",
+    "lang.ar": "العربية",
+    "lang.zh": "中文",
+    "lang.ja": "日本語"
+}

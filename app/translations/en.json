@@ -1,0 +1,15 @@
+{
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "nav.badge": "[IN DEV]",
+    "hero.title": "SYSTEM IN DEV.",
+    "hero.subtitle": "EXPECT SOMETHING SOON.",
+    "hero.description": "I'm building the foundations right now. Scroll down to test the navbar.",
+    "hero.license": "Note: Please stick to the license.",
+    "lang.en": "English",
+    "lang.fr": "Français",
+    "lang.ar": "العربية",
+    "lang.zh": "中文",
+    "lang.ja": "日本語"
+}

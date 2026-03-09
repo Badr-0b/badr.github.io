@@ -1,0 +1,84 @@
+.lang-selector {
+    position: relative;
+}
+
+.lang-selector-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid #333;
+    color: #aaa;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.lang-selector-btn:hover {
+    color: #fff;
+    border-color: #555;
+}
+
+.lang-selector-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: #111;
+    border: 1px solid #333;
+    min-width: 150px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.lang-dropdown.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.lang-option {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 0.85rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    font-family: inherit;
+}
+
+[dir="rtl"] .lang-option {
+    text-align: right;
+}
+
+[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: 0;
+}
+
+.lang-option:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.lang-option.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}

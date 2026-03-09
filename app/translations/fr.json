@@ -1,0 +1,15 @@
+{
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.contact": "Contact",
+    "nav.badge": "[EN DEV]",
+    "hero.title": "SYSTÈME EN DÉVELOPPEMENT.",
+    "hero.subtitle": "ATTENDEZ-VOUS À QUELQUE CHOSE BIENTÔT.",
+    "hero.description": "Je construis les fondations en ce moment. Faites défiler vers le bas pour tester la barre de navigation.",
+    "hero.license": "Remarque : Veuillez respecter la licence.",
+    "lang.en": "English",
+    "lang.fr": "Français",
+    "lang.ar": "العربية",
+    "lang.zh": "中文",
+    "lang.ja": "日本語"
+}
